@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Reham">
+        <meta name="description" content="Reham's portfolio showcasing web dvelopment, technical consulting">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reham Zn- Portfolio </title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+              }
+            img{
+                max-width:200px;
+                max-height: 200px;
+            }
+            table {
+                
+                border: 1px solid #ddd;
+                text-align: center;
+              }
+            tr th{
+                border-bottom: 1px solid #ddd;
+                border-left: 1px solid #ddd;
+                background-color: rgb(180, 180, 180);
+                
+            }
+            tr td{
+                border-left: 1px solid #ddd;
+                border-top: 1px solid #ddd;
+            }
+            footer{
+                text-align: center;
+                padding : 1em;
+                background-color: #333;
+                color: #ddd;
+            }
+            header{
+                background-color: #333;
+                color: white;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a href="#about-me">About me </a>
+            <a href="#my-skills">My skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <header>
+            <!--Header section-->
+            <h1>Reham Zandaki</h1>
+            <p>Web developer | Technical consultant</p>
+        </header>
+        <section id="about-me">
+        <!--About me section-->
+            <h2>About me</h2>
+            <p>A passionate web developer with experience in building websites. specialize in<abbr title=" HyperText Markup Language">HTML</abbr> ,<abbr title="Cascading Style Sheets">CSS</abbr>, 
+                ,<abbr title="JavaScript">JS</abbr>, 
+                I love solving problems and bringing ideas to life through code</p>
+            
+            <p>Here you can find details about my <span class="highlight">Projects</span> ,<span class="highlight"> Skills</span>, and <span class="highlight">work experience</span></p>
+            </section>
+            <img src="https://c8.alamy.com/comp/CRHR4P/beautiful-woman-carrying-a-folder-CRHR4P.jpg" alt="My-fake-porfolio-picture">
+
+        <section id="my-skills">
+            <!--my skills section-->
+            <h2>my skills</h2>
+            <ul>
+                <li>HTML&CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Database Managment (MY SQL)</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2> Projects</h2>
+            <table>
+                <thead>
+                    <tr class="table-row">
+                        <th>Project Name</th>
+                        <th>Description</th>
+                        <th>Tech Stack</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-row">
+                        <td>Portfolio Website</td>
+                        <td>Bacon ipsum dolor amet cow shank frankfurter, short loin meatloaf shoulder flank. Landjaeger beef ribs shankle pork.</td>
+                        <td>HTML , CSS , JavaScript</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td>Task manager</td>
+                        <td>meatball pig bresaola venison. Jowl boudin frankfurter brisket biltong pancetta leberkas hamburger burgdoggen. Shankle pork belly tri-tip kielbasa, filet mignon pancetta ground round.</td>
+                        <td>React , Node js, MongoDB</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="contact">
+            <!--Contact section-->
+            <h2>Get in touch</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Company Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="name">Company email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Project Details:</label>
+                    <textarea name="message" id="message" rows="5" placeholder="Describe your project or request"></textarea>
+                </div>
+                <!--checkbox Input : Services offered to companies-->
+                <p>Select your preferred services:</p>
+                <label for="tech-consulting">
+                    <input type="checkbox" id="tech-consulting" name="services" value="tech-consulting">
+                    Tech Consulting
+                </label>
+                <br>
+                <label for="custom-development">
+                    <input type="checkbox" id="custom-development" name="services" value="custom-development">
+                    Custom Web Development:
+                </label>
+                <details>
+                    <summary>Custom Web Development Options:</summary>
+                    <div>
+                        <label for="web-services">What specific web development services do you need?</label>
+                        <select id="web-services" name="web-services">
+                            <option value="frontend">Frontend Development</option>
+                            <option value="backend">Backend Development</option>
+                            <option value="fullstack">Fullstack Development</option>
+                            <option value="ecommerce">E-commerce Development</option>
+                        </select>
+                    </div>
+                </details>
+                <br>
+                <label for="training">
+                    <input type="checkbox" id="training" name="services" value="training">
+                    Team Training and Support
+                </label>
+                <br>
+                <!--Submit button-->
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <div id="customer-fb">
+            <h3>Customer Feedback:</h3>
+            <p>Youe opinion is matters and can drive change.</p>
+            <p>What did you like about the service:</p>
+            <!--use radio buttons give the customer the
+            ability to choose only one option
+            but in checkboxes give the customer the ability
+            to choose multiple options-->
+            <label><input type="radio" name="feedback" value="quality">Quality</label><br>
+            <label><input type="radio" name="feedback" value="speed">Speed</label><br>
+            <label><input type="radio" name="feedback" value="price">Price</label><br>
+        </div>
+        <!--Footer section-->
+        <footer><!--we will use &copy right entities-->
+            <p>&copy; 2025 Reham Zandaki, All rights reserved</p>
+        </footer>
+    </body>
+</html>
