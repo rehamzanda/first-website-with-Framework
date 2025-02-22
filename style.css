@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+
+table {
+    
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+tr th{
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    background-color: rgb(180, 180, 180);
+    
+}
+tr td{
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+
+header{
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+
+.bg-dark{
+    background-color: #333;
+}
+
+.error {
+    background-color: orangered;
+    color: #fff;
+    padding: 5px;
+    margin: 5px;
+}
